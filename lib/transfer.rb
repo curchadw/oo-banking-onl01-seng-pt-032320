@@ -35,7 +35,7 @@ class Transfer
     else
       nil
     end
-  
+
   end
 
 
