@@ -20,6 +20,7 @@ class Transfer
     else
       @status = 'rejected'
       "Please check your amount balance please."
+    end
   end
 
   def reverse_transfer
