@@ -28,18 +28,18 @@ class Transfer
   end
 
   def reverse_transfer
-    # if @status == 'complete'
-    #   @sender.balance += @amount
-    #   @receiver.balance -= @amount
-    #   @status ='reversed'
-    # else
-    #   nil
-    # end
-    if @status == "complete"
-      @sender.deposit( @amount )
-      @receiver.deposit( @amount * -1)
-      @status = "reversed"
+    if @status == 'complete'
+      @sender.balance += @amount
+      @receiver.balance -= @amount
+      @status ='reversed'
+    else
+      nil
     end
+    # if @status == "complete"
+    #   @sender.deposit( @amount )
+    #   @receiver.deposit( @amount * -1)
+    #   @status = "reversed"
+    # end
   end
 
 
